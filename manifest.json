@@ -1,0 +1,39 @@
+{
+
+    "manifest_version": 2,
+    "name": "Ejercicio2",
+    "version": "1.0",
+    "description": "asignar el valor a variables de pagina",
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "index.html"
+    },
+
+    "background": {
+        "scripts": ["eventos.js"],
+        "persistent": true
+    },
+
+    "options_page": "",
+
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus",
+        "https://*/*",
+        "https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1",
+        "https://www.w3schools.com/js/*",
+        "https://controlroom.grupodigitex.com:8010/RobotWS.svc/test"
+    ],
+    "matches": [
+        "https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1",
+        "https://www.w3schools.com/js/*",
+        "https://controlroom.grupodigitex.com:8010/RobotWS.svc/test"
+
+    ]
+}
